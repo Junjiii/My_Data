@@ -1,6 +1,6 @@
-package mydata.mydata.domain.auth.repository;
+package mydata.mydata.domain.identities.repository;
 
-import mydata.mydata.domain.auth.entity.Identities;
+import mydata.mydata.domain.identities.entity.Identities;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface IdentitiesRepository extends JpaRepository<Identities,Long> {

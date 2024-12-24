@@ -1,4 +1,4 @@
-package mydata.mydata.domain.auth.entity;
+package mydata.mydata.domain.identities.entity;
 
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;

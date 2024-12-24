@@ -1,4 +1,4 @@
-package mydata.mydata.domain.auth.entity;
+package mydata.mydata.domain.identities.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QIdentities extends EntityPathBase<Identities> {
 
-    private static final long serialVersionUID = -1418609269L;
+    private static final long serialVersionUID = -64090817L;
 
     public static final QIdentities identities = new QIdentities("identities");
 

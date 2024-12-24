@@ -24,6 +24,8 @@ public class QTransactions extends EntityPathBase<Transactions> {
 
     public final mydata.mydata.domain.basetime.QBaseTimeEntity _super = new mydata.mydata.domain.basetime.QBaseTimeEntity(this);
 
+    public final BooleanPath accessed = createBoolean("accessed");
+
     public final NumberPath<java.math.BigDecimal> amount = createNumber("amount", java.math.BigDecimal.class);
 
     public final mydata.mydata.domain.categories.entity.QCategories category;
@@ -37,15 +39,13 @@ public class QTransactions extends EntityPathBase<Transactions> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
-    public final mydata.mydata.domain.auth.entity.QIdentities identityCi;
+    public final mydata.mydata.domain.identities.entity.QIdentities identityCi;
 
     public final DateTimePath<java.time.LocalDateTime> installmentDate = createDateTime("installmentDate", java.time.LocalDateTime.class);
 
     public final NumberPath<Integer> installmentMonth = createNumber("installmentMonth", Integer.class);
 
-    public final StringPath invoiceNumber = createString("invoiceNumber");
-
-    public final BooleanPath isGet = createBoolean("isGet");
+    public final StringPath invoiceSerialNumber = createString("invoiceSerialNumber");
 
     //inherited
     public final DateTimePath<java.time.LocalDateTime> lastModifiedDate = _super.lastModifiedDate;
@@ -72,7 +72,7 @@ public class QTransactions extends EntityPathBase<Transactions> {
         super(type, metadata, inits);
         this.category = inits.isInitialized("category") ? new mydata.mydata.domain.categories.entity.QCategories(forProperty("category")) : null;
         this.finance = inits.isInitialized("finance") ? new mydata.mydata.domain.finances.entity.QFinances(forProperty("finance")) : null;
-        this.identityCi = inits.isInitialized("identityCi") ? new mydata.mydata.domain.auth.entity.QIdentities(forProperty("identityCi")) : null;
+        this.identityCi = inits.isInitialized("identityCi") ? new mydata.mydata.domain.identities.entity.QIdentities(forProperty("identityCi")) : null;
     }
 
 }

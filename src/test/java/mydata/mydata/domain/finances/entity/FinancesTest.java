@@ -1,14 +1,12 @@
 package mydata.mydata.domain.finances.entity;
 
 import jakarta.persistence.EntityManager;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
@@ -37,16 +35,9 @@ class FinancesTest {
         // wooriBank
         assertThat(findWooriBank.getId()).isEqualTo(wooriBank.getId());
         assertThat(findWooriBank.getName()).isEqualTo(wooriBank.getName());
-//        Assertions.assertThat(findWooriBank.get).isEqualTo(wooriBank.getId());
-//        Assertions.assertThat(findWooriBank.getId()).isEqualTo(wooriBank.getId());
-//        Assertions.assertThat(findWooriBank.getId()).isEqualTo(wooriBank.getId());
 
         // shinhanCard
         assertThat(findShinhanCard.getId()).isEqualTo(shinhanCard.getId());
-//        Assertions.assertThat(findShinhanCard.getId()).isEqualTo(shinhanCard.getId());
-//        Assertions.assertThat(findShinhanCard.getId()).isEqualTo(shinhanCard.getId());
-//        Assertions.assertThat(findShinhanCard.getId()).isEqualTo(shinhanCard.getId());
-//        Assertions.assertThat(findShinhanCard.getId()).isEqualTo(shinhanCard.getId());
 
 
     }

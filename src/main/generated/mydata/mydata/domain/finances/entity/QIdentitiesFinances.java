@@ -33,7 +33,7 @@ public class QIdentitiesFinances extends EntityPathBase<IdentitiesFinances> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
-    public final mydata.mydata.domain.auth.entity.QIdentities identityCi;
+    public final mydata.mydata.domain.identities.entity.QIdentities identityCi;
 
     //inherited
     public final DateTimePath<java.time.LocalDateTime> lastModifiedDate = _super.lastModifiedDate;
@@ -57,7 +57,7 @@ public class QIdentitiesFinances extends EntityPathBase<IdentitiesFinances> {
     public QIdentitiesFinances(Class<? extends IdentitiesFinances> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
         this.finance = inits.isInitialized("finance") ? new QFinances(forProperty("finance")) : null;
-        this.identityCi = inits.isInitialized("identityCi") ? new mydata.mydata.domain.auth.entity.QIdentities(forProperty("identityCi")) : null;
+        this.identityCi = inits.isInitialized("identityCi") ? new mydata.mydata.domain.identities.entity.QIdentities(forProperty("identityCi")) : null;
     }
 
 }
